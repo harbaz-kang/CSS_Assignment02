@@ -1,0 +1,121 @@
+/* To add custom font */
+@font-face {
+    font-family: 'Antic';
+    src: url(../fonts/AnticDidone-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saira';
+    src: url(../fonts/SairaCondensed-Medium.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Clearing default browser settings */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the whole webpage */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #A5ABA0;
+}
+
+.box-container{
+    display: flex;
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+    width: 100%;
+}
+
+/* Style for box containing image and song interface */
+.container-left {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-image: url("../images/background-img.jpg");
+    background-size: cover;
+    position: fixed;
+    left: 12%;
+}
+
+/* Style for the image */
+.cover-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15%;
+    border: 5px solid #DBDDD0;
+}
+
+/* Style for song interface */
+.song-interface{
+    line-height: 3px;
+    margin: 30px;
+    font-family: 'Antic', cursive;
+}
+
+.song-interface>h2,h3 {
+    text-align: center;
+    margin: 20px;
+    line-height: 0.5;
+    color: #DBDDD0;;
+    font-weight: 600;
+}
+
+/* Style for the horizontal rule */
+hr{
+    width: 85%;
+    height: 3px;
+    background-color: #DBDDD0;
+    margin: 40px auto 20px auto;
+    border: none;
+    display: flex;
+}
+
+/* Style for the icons */
+.interface-icons{
+    margin-top: 10px;
+    letter-spacing: 10px;
+    color: #DBDDD0;
+}
+
+.volume-icons{
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+/* Style for box containing lyrics */
+.container-right {
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px 20px 20px;
+    line-height: 10px;
+    color: #DBDDD0;
+    position: relative;
+    background-image: url("../images/background-img-2.jpg");
+    background-size: contain;
+    width: 40%;
+    left: 50%;
+}
+
+/* Style for song lyrics */
+.lyrics-container{
+    font-family:'Saira';
+    font-size: large;
+}
+
+.lyrics-container p {
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    text-align: justify;
+}
