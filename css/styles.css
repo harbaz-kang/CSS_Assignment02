@@ -25,7 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background-color: #A5ABA0;
+    background-color: rgb(52, 20, 20);
 }
 
 .box-container{
@@ -60,7 +60,7 @@ body {
 .song-interface{
     line-height: 3px;
     margin: 30px;
-    font-family: 'Antic', cursive;
+    font-family: 'Antic', cursive, sans-serif;
 }
 
 .song-interface>h2,h3 {
@@ -109,7 +109,7 @@ hr{
 
 /* Style for song lyrics */
 .lyrics-container{
-    font-family:'Saira';
+    font-family:'Saira', cursive, sans-serif;
     font-size: large;
 }
 
